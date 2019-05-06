@@ -42,7 +42,3 @@ print_r($result);
 ### The old fashioned way
 
 See the file `demo.php`
-
-```
-
--- end --

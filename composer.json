@@ -1,0 +1,14 @@
+{
+    "name": "geocoderxyz/geocoder",
+    "description": "A class for comunicationg with Geocoder.xyz api",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rezart Muco",
+            "email": "rezart.muco@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

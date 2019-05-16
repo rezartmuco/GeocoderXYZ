@@ -35,10 +35,14 @@ Start geocoding
 
 ```php
 $geocoder = new Geocoder('YOUR-API-KEY');
-$result = $geocoder->geocode('415 C'WEALTH AVE WEST Singapore');
+$result = $geocoder->geocode('415 WEALTH AVE WEST Singapore');
 print_r($result);
 ```
 
 ### The old fashioned way
+just require the file Geocoder.php 
+for more examples how to use this class see the file `demo.php`
 
-See the file `demo.php`
+
+
+

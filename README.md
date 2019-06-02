@@ -1,4 +1,6 @@
 # Geocoder.xyz Data Geocoding Library for PHP
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Frezartmuco%2FGeocoderXYZ.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Frezartmuco%2FGeocoderXYZ?ref=badge_shield)
+
 
 A [PHP](http://php.net/) library to use [Geocoder.xyz geocoder API](https://geocode.xyz).
 
@@ -46,3 +48,7 @@ for more examples how to use this class see the file `demo.php`
 
 
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Frezartmuco%2FGeocoderXYZ.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Frezartmuco%2FGeocoderXYZ?ref=badge_large)

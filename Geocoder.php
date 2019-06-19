@@ -5,10 +5,22 @@ private $geocodingservice;
 private $key;
 public $query;
 
-function __construct($authkey){
-	$this->geocodingservice="https://geocode.xyz";
+function __construct($authkey,$host="https://geocode.xyz"){
+	$this->geocodingservice=$host;
 	$this->key=$authkey;
+	if(!$this->_is_curl_installed()){echo "curl not installed"; die;}
+ 
 }
+ 
+private function _is_curl_installed() {
+    if  (in_array  ('curl', get_loaded_extensions())) {
+        return true;
+    }
+    else {
+        return false;
+    }
+} 
+
 
  public function curlreq($query,$simplegeocodig=true,$additionalfields=array()){
 	 
@@ -52,6 +64,14 @@ function __construct($authkey){
 
  public function sentiment($query){
     return json_decode($this->curlreq($query,false),TRUE);
+ }
+
+ public function batchgeocode($queryarray){
+ $result=array();	
+        foreach($queryarray as $query){
+           $result[]=$this->geocode($query);
+        }	
+ return $result;
  }
 
 }
